@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=<?php echo $cfg_soft_lang; ?>">
+    <title> 修改职位详情</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/zhiwei.css">
+    <link rel="stylesheet" href="css/dist/css/bootstrap.min.css">
+    <script language="javascript" src="../include/js/dedeajax2.js"></script>
+    <script language="javascript" src="js/ieemu.js"></script>
+    <script language="javascript" src="js/context_menu.js"></script>
+    <script language="javascript" src="js/main.js"></script>
+    <script language="javascript" src="js/list.js"></script>
+    <script language="javascript" src="js/list_youhui.js"></script>
+</head>
+<body leftmargin="8" topmargin="8" background='images/allbg.gif' onLoad="ContextMenu.intializeContextMenu()">
+
+<form name="form2" method="POST" action="content_save.php">
+    <!--<form name="form2">-->
+
+    <table class="table table-bordered">
+        <tr bgcolor="#E7E7E7">
+            <td height="28" colspan="14" background="images/tbg.gif" style="padding-left:10px;">
+               职位详情
+            </td>
+        </tr>
+        <tr  class="active" bgcolor="#FBFCE2" height="25">
+            <td width="5%">id</td>
+            <td width="10%"><?php echo $row['id']?></td>
+
+            <td width="6%">用人司局</td>
+            <td width="10%"><?php echo $row['yrsj']?></td>
+        </tr>
+        <tr class="active" bgcolor="#FBFCE2">
+            <td width="5%">职位名称</td>
+            <td  ><?php echo $row['zwmc']?></td>
+
+            <td width="5%">官方公考职位代码</td>
+            <td  ><?php echo $row['gfgbzwdm']?></td>
+        </tr>
+        <tr  class="active" bgcolor="#FBFCE2">
+            <td width="5%">华图唯一职位代码</td>
+            <td  ><?php echo $row['htwyzwdm']?></td>
+            <td width="5%">计划人数</td>
+            <td  ><?php echo $row['jhrs']?></td>
+        </tr>
+        <tr  class="active" bgcolor="#FBFCE2">
+            <td  width="5%">控制人数</td>
+            <td  ><?php echo $row['kzrs']?></td>
+
+            <td  width="5%">省份</td>
+            <td  ><?php echo $row['shengfen']?></td>
+        </tr>
+        <tr  class="active" bgcolor="#FBFCE2">
+            <td width="5%">校区</td>
+            <td  ><?php echo $row['xiaoqu']?></td>
+            <!--<td><input type="text" name="addtime" value="<?php echo $row['addtime']?>"></td>-->
+
+            <td width="5%">考试类型</td>
+            <td  ><?php echo $row['kslx']?></td>
+        </tr>
+        <tr  class="active" bgcolor="#FBFCE2">
+            <td width="5%">招考职位所有人</td>
+            <td ><?php echo $row['zkzwsyr']?></td>
+
+            <td width="5%">专业</td>
+            <td  ><?php echo $row['zhuanye']?></td>
+        </tr>
+        <tr  class="active" bgcolor="#FBFCE2">
+            <td width="5%">学历</td>
+            <td><?php echo $row['xueli']?></td>
+
+            <td width="5%">学位</td>
+            <td ><?php echo $row['xuewei']?></td>
+        </tr>
+        <tr  class="active" bgcolor="#FBFCE2">
+            <td width="5%">笔试最后日期</td>
+            <td><?php echo $row['bsksrq']?></td>
+
+            <td width="5%">政治面貌</td>
+            <td ><?php echo $row['zzmm']?></td>
+        </tr>
+
+        <tr  class="active" bgcolor="#FBFCE2">
+            <td width="5%">工作年限</td>
+            <td  ><?php echo $row['gznx']?></td>
+
+            <td width="5%">部门名称</td>
+            <td  ><?php echo $row['bmmc']?></td>
+        </tr>
+        <tr  class="active" bgcolor="#FBFCE2">
+            <td width="5%">部门代码</td>
+            <td  ><?php echo $row['bmdm']?></td>
+
+            <td width="5%">备注</td>
+            <td ><?php echo $row['beizhu']?></td>
+        </tr>
+        <tr  class="active" bgcolor="#FBFCE2">
+            <td width="5%">职位简介</td>
+            <td  ><?php echo $row['zwjj']?></td>
+        </tr>
+        <tr class="active">
+            <td width="5%">操作</td>
+            <td >
+                <input class="btn btn-danger btn-lg  active btn-block"  type="submit" value="返回">
+            </td>
+
+        </tr>
+
+    </table>
+</form>
+
+
+
+
+</body>
+</html>

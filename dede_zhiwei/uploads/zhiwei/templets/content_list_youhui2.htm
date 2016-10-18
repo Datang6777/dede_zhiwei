@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=<?php echo $cfg_soft_lang; ?>">
+    <title>文档管理</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <script language="javascript" src="../include/js/dedeajax2.js"></script>
+    <script language="javascript" src="js/ieemu.js"></script>
+    <script language="javascript" src="js/context_menu.js"></script>
+    <script language="javascript" src="js/main.js"></script>
+    <!--<script language="javascript" src="js/list.js"></script>-->
+    <script language="javascript" src="js/list_youhui.js"></script>
+</head>
+<body leftmargin="8" topmargin="8" background='images/allbg.gif' onLoad="ContextMenu.intializeContextMenu()">
+
+<!--  快速转换位置按钮  -->
+<table width="98%" border="0" cellpadding="0" cellspacing="1" bgcolor="#ccd9b9" align="center">
+    <tr>
+        <td height="26" background="images/newlinebg3.gif">
+            <table width="98%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td align="center">
+                        <form  name= "form2" action="content_search.php" method="post">
+                            <input type="text" name="search" placeholder="按分校搜索">
+                            <input type="text" name="search2" placeholder="按班别bb搜索">
+                            <input type="text" name="search3" placeholder="按班次bc搜索">
+                            <input type="submit" value="搜 索">
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+<!--  内容列表   -->
+<form name="form2">
+    <table width="98%" border="0" cellpadding="2" cellspacing="1" bgcolor="#CFCFCF" align="center" style="margin-top:8px">
+        <tr bgcolor="#E7E7E7" >
+            <td height="28" colspan="14" background="images/tbg.gif" style="padding-left:10px;">
+                ◆ {dede:global.positionname/}优惠列表 &nbsp;(使用鼠标右键弹出菜单)
+            </td>
+        </tr>
+        <tr align="center" bgcolor="#FBFCE2" height="25">
+            <td width="6%">id</td>
+            <td width="6%">bb</td>
+            <td width="6%">bc</td>
+            <td width="6%">fenxiao</td>
+            <td width="6%">starTime</td>
+            <td width="6%">endTime</td>
+            <td width="6%">bx</td>
+            <td width="8%">jine</td>
+            <td width="8%">addtime</td>
+            <td width="8%">if_zh</td>
+            <td width="4%">addyear</td>
+            <td width="6%">userid</td>
+            <td width="6%">username</td>
+            <td width="6%">操作</td>
+
+
+        </tr>
+        {dede:datalist}
+        <tr align='center' bgcolor="#FFFFFF" height="26" align="center" onMouseMove="javascript:this.bgColor='#FCFDEE';" onMouseOut="javascript:this.bgColor='#FFFFFF';">
+            <td>{dede:field.id/}</td>
+            <td>{dede:field.bb/}</td>
+            <td>{dede:field.bc/}</td>
+            <td>{dede:field.fenxiao/}</td>
+            <td>{dede:field.starTime/}</td>
+            <td>{dede:field.endTime/}</td>
+            <td>{dede:field.bx/}</td>
+            <td>{dede:field.jine/}</td>
+            <td>{dede:field.addtime/}</td>
+            <td>{dede:field.if_zh/}</td>
+            <td>{dede:field.addyear/}</td>
+            <td>{dede:field.userid/}</td>
+            <td>{dede:field.username/}</td>
+
+            <td>
+                <img src='images/gtk-edit.png' title="编辑" alt="编辑" onClick="editArc_youhui({dede:field.id/});" style='cursor:pointer' border='0' width='16' height='16' />
+                <!--<input type="submit" value="删除"  >-->
+                <img src='images/trun.gif' title="刪除" alt="刪除" onClick="delArc_youhui({dede:field.id/}, event, this);" style='cursor:pointer' border='0' width='16' height='16' />
+            </td>
+
+        </tr>
+        {/dede:datalist}
+
+</form>
+<tr align="right" bgcolor="#F9FCEF">
+    <td height="36" colspan="14" align="center">
+        {dede:pagelist listsize=3/}
+    </td>
+</tr>
+</table>
+
+<!--  搜索表单  -->
+</body>
+</html>

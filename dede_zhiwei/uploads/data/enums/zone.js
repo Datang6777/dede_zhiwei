@@ -1,0 +1,37 @@
+<!--
+em_zones=new Array();
+em_zones[500]='北京';
+em_zones[1000]='天津';
+em_zones[1500]='河北';
+em_zones[2000]='内蒙古';
+em_zones[2500]=' 山西';
+em_zones[3000]=' 上海';
+em_zones[3500]=' 安徽';
+em_zones[4000]=' 江苏';
+em_zones[4500]=' 浙江';
+em_zones[5000]='山东';
+em_zones[5500]='福建';
+em_zones[6000]=' 江西';
+em_zones[6500]=' 广东';
+em_zones[7000]=' 广西';
+em_zones[7500]=' 海南';
+em_zones[8000]=' 河南';
+em_zones[8500]=' 湖北';
+em_zones[9000]=' 湖南';
+em_zones[9500]='黑龙江';
+em_zones[10000]='吉林';
+em_zones[10500]='辽宁';
+em_zones[11000]=' 陕西';
+em_zones[11500]='甘肃';
+em_zones[12000]='宁夏';
+em_zones[12500]=' 青海';
+em_zones[13000]=' 新疆';
+em_zones[13500]=' 重庆';
+em_zones[14000]=' 四川';
+em_zones[14500]=' 云南';
+em_zones[15000]=' 贵州';
+em_zones[15500]=' 西藏';
+em_zones[16000]=' 香港';
+em_zones[16500]=' 澳门';
+em_zones[17000]=' 台湾';
+-->
